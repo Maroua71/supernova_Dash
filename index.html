@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNova Dash</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="gameContainer">
+        <div id="ui-layer">
+            <div class="stat">DISTANCE: <span id="dist-val">0</span>m</div>
+            <div class="stat" id="shield-status">🛡️ SHIELD ACTIVE</div>
+        </div>
+
+        <div id="hs-layer">
+            <div class="stat">BEST: <span id="high-score-val">0</span>m</div>
+        </div>
+
+        <div id="combo-display"></div>
+
+        <div id="game-over">
+            <h1>GAME OVER</h1>
+
+            <div class="score-label">FINAL DISTANCE</div>
+            <div class="score-value"><span id="final-score">0</span><span class="unit">m</span></div>
+
+            <div class="divider"></div>
+
+            <div class="best-row">
+                BEST &nbsp;
+                <span id="best-display">0</span>m
+            </div>
+
+            <button onclick="location.reload()">RETRY DASH</button>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+</body>
+</html>
